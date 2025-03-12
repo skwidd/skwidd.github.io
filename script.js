@@ -18,8 +18,8 @@ function startNewGame() {
     clueIndex = 0;
     document.getElementById("rating").textContent = currentMovie.rating;
     //document.getElementById("movie").textContent = currentMovie.title;
-    //document.getElementById("date").textContent = currentMovie.date;
-    //document.getElementById("today").textContent = today;
+    document.getElementById("date").textContent = currentMovie.date;
+    document.getElementById("today").textContent = today;
     document.getElementById("clue0").textContent = `${currentMovie.clues[clueOrder[clueIndex]]}`;
     document.getElementById("message").textContent = "";
     document.getElementById("guessInput").value = "";
