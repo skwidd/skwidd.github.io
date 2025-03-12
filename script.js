@@ -16,7 +16,7 @@ function startNewGame() {
     const today = new Date().toISOString().split("T")[0] // Get today's date in YYYY-MM-DD format
     currentMovie = movies.find(movies => movies.date === today) || movies[Math.floor(Math.random() * movies.length)];
     clueIndex = 0;
-    document.getElementById("rating").textContent = currentMovie.Rating;
+    document.getElementById("rating").textContent = currentMovie.rating;
     //document.getElementById("movie").textContent = currentMovie.title;
     //document.getElementById("date").textContent = currentMovie.date;
     //document.getElementById("today").textContent = today;

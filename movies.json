@@ -1,7 +1,8 @@
 [
   {
     "title": "Inception",
-    "Rating": "PG-13",
+    "rating": "PG-13",
+    "date": "2025-03-12",
     "clues": {
       "Profanity": "A few occasional uses of 'shit', 'crap' and 'piss'.",
       "Sex": "There is a single kiss in a non-romantic context.",
@@ -12,7 +13,8 @@
   },
   {
     "title": "The Matrix",
-    "Rating": "R",
+    "rating": "R",
+    "date": "2025-03-13",
     "clues": {
       "Profanity": "Several uses of 'shit' and 'damn', one use of 'goddamn'.",
       "Sex": "Brief scene of a man and woman kissing passionately.",
@@ -23,7 +25,8 @@
   },
   {
     "title": "Titanic",
-    "Rating": "PG-13",
+    "rating": "PG-13",
+    "date": "2025-03-14",
     "clues": {
       "Profanity": "Mild profanity including 'hell' and 'damn'.",
       "Sex": "A brief scene of nudity as a woman poses for a painting, followed by an implied love scene.",
