@@ -2,8 +2,10 @@
 let clueIndex = 0
 
 const clueOrder = ["Profanity", "Sex", "Violence", "Drugs", "Intense Scene"]
-var movies = require("/movies.json");
-
+let movies = require('./movies.json');
+if (!movies) {
+    import jsonData from ('./movies.json');
+}
 function startNewGame() {
     const today = new Date().toISOString().split("T")[0] // Get today's date in YYYY-MM-DD format
     let currentMovie = movies.find(movies => movies.date === today);
