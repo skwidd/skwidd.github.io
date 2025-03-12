@@ -1,6 +1,7 @@
 ﻿let movies;
 let currentMovie;
 let clueIndex = 0;
+const clueOrder = ["Profanity", "Sex", "Violence", "Drugs", "Intense Scene"];
 
 // Load movies from JSON file
 fetch('movies.json')
@@ -11,9 +12,11 @@ fetch('movies.json')
     });
 
 function startNewGame() {
-    currentMovie = movies[Math.floor(Math.random() * movies.length)];
+    const today = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
+    currentMovie = movies.find(movie => movie.date === today) || movies[Math.floor(Math.random() * movies.length)];
     clueIndex = 0;
-    document.getElementById("clue").textContent = currentMovie.clues[clueIndex];
+    document.getElementById("rating").textContent = currentMovie.Rating;
+    document.getElementById("clue").textContent = `${clueOrder[clueIndex]}: ${currentMovie.clues[clueOrder[clueIndex]]}`;
     document.getElementById("message").textContent = "";
     document.getElementById("guessInput").value = "";
 }
@@ -24,11 +27,11 @@ function checkGuess() {
         document.getElementById("message").textContent = "Correct! The movie was " + currentMovie.title + "!";
     } else {
         clueIndex++;
-        if (clueIndex < currentMovie.clues.length) {
-            document.getElementById("clue").textContent = currentMovie.clues[clueIndex];
+        if (clueIndex < clueOrder.length) {
+            document.getElementById("clue").textContent = `${clueOrder[clueIndex]}: ${currentMovie.clues[clueOrder[clueIndex]]}`;
         } else {
             document.getElementById("message").textContent = "Out of clues! The movie was " + currentMovie.title + ". Try again!";
-            setTimeout(startNewGame, 2000);
+            setTimeout(selectMovieForToday, 2000);
         }
     }
 }
