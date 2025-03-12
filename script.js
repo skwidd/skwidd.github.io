@@ -52,7 +52,7 @@ function startNewGame() {
     clueIndex = 0;
     document.getElementById("rating").textContent = currentMovie.rating;
     document.getElementById("clue0").textContent = `${currentMovie.clues[clueOrder[clueIndex]]}`;
-    document.getElementById("message").textContent = Object.toString(movies);
+    document.getElementById("message").textContent = "";
     document.getElementById("guessInput").value = "";
 }
 
