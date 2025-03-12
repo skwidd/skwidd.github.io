@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Inception",
+    "clues": [
+      "A dream within a dream.",
+      "Directed by Christopher Nolan.",
+      "Stars Leonardo DiCaprio."
+    ]
+  },
+  {
+    "title": "The Matrix",
+    "clues": [
+      "What is real?",
+      "Red pill or blue pill?",
+      "Keanu Reeves is the lead actor."
+    ]
+  },
+  {
+    "title": "Titanic",
+    "clues": [
+      "A tragic love story on a ship.",
+      "Based on a real-life event.",
+      "Leonardo DiCaprio and Kate Winslet star in it."
+    ]
+  }
+]
