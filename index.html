@@ -9,7 +9,7 @@
 <body onload="startNewGame()">
     <div class="container">
         <h1>Guess the Movie by Parental Guidelines</h1>
-        <p><strong>Rating:</strong> <span id="rating">Loading...</span></p>
+        <p><strong>Rating: </strong> <span id="rating">Loading...</span><strong>  Year: </strong><span id="year">Loading...</span><strong>  Run Time: </strong><span id="runtime">Loading...</span></p>
         <div id="clues-container">
             <p><span class=category>Profanity: </span><span class="clue" id="clue0"></span></p>
             <p><span class=category>Sex: </span><span class="clue" id="clue1"></span></p>
@@ -20,7 +20,7 @@
         <input type="text" id="guessInput" placeholder="Enter your guess...">
         <button onclick="checkGuess()">Submit Guess</button>
         <p id="message"></p>
-      
+
     </div>
     <script src="script.js"></script>
 </body>

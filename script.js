@@ -3,6 +3,8 @@
         "title": "Inception",
         "rating": "PG-13",
         "date": "2025-03-12",
+        "year": "2010",
+        "run-time": "2h 28m",
         "clues": {
             "Profanity": "A few occasional uses of 'shit', 'crap' and 'piss'.",
             "Sex": "There is a single kiss in a non-romantic context.",
@@ -36,21 +38,18 @@
         }
     }
 ];
-let currentMovie
 let clueIndex = 0
+
 const clueOrder = ["Profanity", "Sex", "Violence", "Drugs", "Intense Scene"]
 
-//import json file
-//let movies = require('./movies.json');
-//if (!movies) {
-//    import jsonData from ('./movies.json');
-//}
 function startNewGame() {
     const today = new Date().toISOString().split("T")[0] // Get today's date in YYYY-MM-DD format
-    let currentMovie = movies.find(movies => movies.date === today);
 
+    currentMovie = movies.find(movies => movies.date === today);
     clueIndex = 0;
     document.getElementById("rating").textContent = currentMovie.rating;
+    document.getElementById("year").textContent = currentMovie.year;
+    document.getElementById("runtime").textContent = currentMovie.runtime;
     document.getElementById("clue0").textContent = `${currentMovie.clues[clueOrder[clueIndex]]}`;
     document.getElementById("message").textContent = "";
     document.getElementById("guessInput").value = "";
@@ -61,7 +60,7 @@ function checkGuess() {
         .getElementById("guessInput")
         .value.trim()
         .toLowerCase()
-    //document.getElementById("date").textContent = userGuess + " " + currentMovie.title.toLowerCase();
+    //document.getElementById("message").textContent = userGuess + " " + currentMovie.title.toLowerCase();
     if (userGuess === currentMovie.title.toLowerCase()) {
         document.getElementById("message").textContent =
             "Correct! The movie was " + currentMovie.title + "!"
