@@ -10,7 +10,13 @@
     <div class="container">
         <h1>Guess the Movie</h1>
         <p><strong>Rating:</strong> <span id="rating">Loading...</span></p>
-        <p><strong>Clue:</strong> <span id="clue">Loading...</span></p>
+        <div id="clues-container">
+            <p><span class=category>Profanity: </span><span class="clue" id="clue0"></span></p>
+            <p><span class=category>Sex: </span><span class="clue" id="clue1"></span></p>
+            <p><span class=category>Violence: </span><span class="clue" id="clue2"></span></p>
+            <p><span class=category>Drugs: </span><span class="clue" id="clue3"></span></p>
+            <p><span class=category>Intense Scene: </span><span class="clue" id="clue4"></span></p>
+        </div>
         <input type="text" id="guessInput" placeholder="Enter your guess...">
         <button onclick="checkGuess()">Submit Guess</button>
         <p id="message"></p>
