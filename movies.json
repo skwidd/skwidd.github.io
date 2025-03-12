@@ -4,7 +4,7 @@
     "rating": "PG-13",
     "date": "2025-03-12",
     "year": "2010",
-    "run-time": "2h 28m",
+    "fbombs": "0",
     "clues": {
       "Profanity": "A few occasional uses of 'shit', 'crap' and 'piss'.",
       "Sex": "There is a single kiss in a non-romantic context.",
@@ -17,6 +17,8 @@
     "title": "The Matrix",
     "rating": "R",
     "date": "2025-03-13",
+    "year": "1999",
+    "fbombs": "1",
     "clues": {
       "Profanity": "Several uses of 'shit' and 'damn', one use of 'goddamn'.",
       "Sex": "Brief scene of a man and woman kissing passionately.",
@@ -29,12 +31,56 @@
     "title": "Titanic",
     "rating": "PG-13",
     "date": "2025-03-14",
+    "year": "1997",
+    "fbombs": "multiple",
     "clues": {
       "Profanity": "Mild profanity including 'hell' and 'damn'.",
       "Sex": "A brief scene of nudity as a woman poses for a painting, followed by an implied love scene.",
       "Violence": "People struggle to escape as the ship sinks, with some falling to their deaths.",
       "Drugs": "Characters drink wine and champagne during dinner scenes.",
       "Intense Scene": "The sinking sequence is very intense and emotional, with people screaming and drowning."
+    }
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "rating": "R",
+    "year": "1994",
+    "date": "2025-03-15",
+    "fbombs": "multiple",
+    "clues": {
+      "Profanity": "Contains strong language, including multiple uses of 'f***' and other expletives.",
+      "Sex": "Depicts scenes of sexual violence and implied sexual acts.",
+      "Violence": "Includes scenes of physical assault, prison violence, and a graphic depiction of a suicide.",
+      "Drugs": "Shows characters consuming alcohol and cigarettes; no depiction of drug use.",
+      "Intense Scene": "The portrayal of prison life and instances of abuse may be distressing to some viewers."
+    }
+  },
+  {
+    "title": "The Godfather",
+    "rating": "R",
+    "year": "1972",
+    "date": "2025-03-16",
+    "fbombs": "few",
+    "clues": {
+      "Profanity": "Contains some strong language, including uses of 'f***'.",
+      "Sex": "Includes brief scenes of sexuality and nudity.",
+      "Violence": "Depicts graphic scenes of mob violence, shootings, and assassinations.",
+      "Drugs": "Characters are shown drinking alcohol and smoking cigarettes.",
+      "Intense Scene": "The depiction of mob executions and intense family drama may be unsettling."
+    }
+  },
+  {
+    "title": "The Dark Knight",
+    "rating": "PG-13",
+    "year": "2008",
+    "date": "2025-03-17",
+    "fbombs": "none",
+    "clues": {
+      "Profanity": "Contains mild language, including uses of 'damn' and 'hell'.",
+      "Sex": "Minimal sexual content; includes brief kissing scenes.",
+      "Violence": "Depicts intense sequences of violence, including shootings, explosions, and hand-to-hand combat.",
+      "Drugs": "Some characters are shown drinking alcohol; no drug use depicted.",
+      "Intense Scene": "The portrayal of the Joker and intense action sequences may be disturbing to some viewers."
     }
   }
 ]
