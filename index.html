@@ -1,11 +1,18 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Guesser</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>HELLO</h1>
+    <div class="container">
+        <h1>Guess the Movie</h1>
+        <p id="clue">First clue will appear here.</p>
+        <input type="text" id="guessInput" placeholder="Enter your guess...">
+        <button onclick="checkGuess()">Submit Guess</button>
+        <p id="message"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
