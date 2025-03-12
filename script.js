@@ -6,20 +6,12 @@ var movies = require("/movies.json");
 
 function startNewGame() {
     const today = new Date().toISOString().split("T")[0] // Get today's date in YYYY-MM-DD format
-    document.getElementById("today").textContent = today;
-
     let currentMovie = movies.find(movies => movies.date === today);
-    if (!currentMovie) {
-        document.getElementById("date").textContent = "movie not found";
-    } else {
-        document.getElementById("date").textContent = currentMovie.date;
-    }
+
     clueIndex = 0;
     document.getElementById("rating").textContent = currentMovie.rating;
-    document.getElementById("movie").textContent = currentMovie.title;
-
     document.getElementById("clue0").textContent = `${currentMovie.clues[clueOrder[clueIndex]]}`;
-    document.getElementById("message").textContent = "";
+    document.getElementById("message").textContent = Object.toString(movies);
     document.getElementById("guessInput").value = "";
 }
 
