@@ -14,7 +14,7 @@ fetch("movies.json")
 
 function startNewGame() {
     const today = new Date().toISOString().split("T")[0] // Get today's date in YYYY-MM-DD format
-    currentMovie = movies.find(movie => movie.date === today) || movies[Math.floor(Math.random() * movies.length)];
+    currentMovie = movies.find(movies => movies.date === today) || movies[Math.floor(Math.random() * movies.length)];
     clueIndex = 0;
     document.getElementById("rating").textContent = currentMovie.Rating;
     //document.getElementById("movie").textContent = currentMovie.title;
