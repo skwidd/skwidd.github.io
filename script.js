@@ -1,16 +1,8 @@
-﻿let movies
-let currentMovie
+﻿let currentMovie
 let clueIndex = 0
 
 const clueOrder = ["Profanity", "Sex", "Violence", "Drugs", "Intense Scene"]
-
-// Load movies from JSON file
-fetch("movies.json")
-    .then((response) => response.json())
-    .then((data) => {
-        movies = data
-        startNewGame()
-    })
+var movies = require("/movies.json");
 
 function startNewGame() {
     const today = new Date().toISOString().split("T")[0] // Get today's date in YYYY-MM-DD format
